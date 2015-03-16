@@ -4,6 +4,7 @@ languages: ruby
 resources: 1
 ---
 # Introduction To Hashes
+
 A hash is a collection of key-value pairs. A key-value pair is an association where a key is assigned a specific value. A hash is represented with curly braces `{ }` and consists of a key, usually a [symbol](http://www.ruby-doc.org/core-2.1.5/Symbol.html) that points to a value.  
 
 > `hash = {:key => "value", :another_key => "another value"}`
@@ -36,7 +37,17 @@ Doing this changes the positions hash to:
 positions = {:office_manager => "Carley McGee", :coo => "Kristi Riordan ", :placements_manager => "Jackie Morgan", :creative_designer => "Edvin Lee", :ruby_instructor => "Katie"}
 ```
 
-The third test in this lab requires you to build out a multidimentional hash (monopoly).  A multidimentional hash is simply a hash of hashes - that is a hash that contains other hashes. At the end of the exercice your multidimentional monopoly hash should look like this:
+## Objectives
+1. Become comfortable reading and using the official documentation of the Ruby Language
+2. Gain proficiency instantiating hashes
+3. Gain understanding of nested hash creation and retrieval
+4. Gain proficiency performing simple manipulations
+
+## Instructions
+
+The third test in this lab requires you to build out a multidimentional hash (monopoly).  A multidimentional hash is simply a hash of hashes - a key can point to a value that is an additiona hash, and so on. You can think of it as nesting.
+
+At the end of the exercice your multidimentional monopoly hash should look like this:
 
 ```ruby
 monopoly =  {
@@ -73,14 +84,7 @@ monopoly =  {
 }
 ```
 
-## Objectives
-1. Become comfortable reading and using the official documentation of the Ruby Language
-2. Gain proficiency instantiating hashes
-3. Gain understanding of nested hash creation and retrieval
-4. Gain proficiency performing simple manipulations
-
-## Instructions
-1. MAKE SURE TO READ THE INSTRUCTIONS IN THE `intro_to_ruby_hashes_lab_spec.rb`
+1. Follow the comment instructions in `intro_to_ruby_hashes_lab_spec.rb` and go through each test sequentially.
 2. If you do not understand the instructions, consult an instructor
 
 ## Resources
