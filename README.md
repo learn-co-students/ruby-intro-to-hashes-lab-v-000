@@ -1,53 +1,23 @@
----
-tags: hashes, micro, introduction
-languages: ruby
-resources: 1
----
-# Introduction To Hashes
-
-A hash is a collection of key-value pairs. A key-value pair is an association where a key is assigned a specific value. A hash is represented with curly braces `{ }` and consists of a key, usually a [symbol](http://www.ruby-doc.org/core-2.1.5/Symbol.html) that points to a value.  
-
-> `hash = {:key => "value", :another_key => "another value"}`
-
-Given a hash named positions that stores employees by their positions:
-
-```ruby
-positions = {:office_manager => "Carley McGee", :coo => "Kristi Riordan ", :placements_manager => "Jackie Morgan", :creative_designer => "Edvin Lee"}
-```
-
->Open up your terminal and type out the hash structure above in it.
-
-You find the value of a certain key (in the example below `office_manager`) by calling the hash name and setting the key of the value you are interested in square brackets like this:
-
-```ruby
-positions[:office_manager]
-```
-this would return the string:
-```ruby
-"Carley McGee"
-```
-
-To add a key, which is a symbol ruby_instructor, and a string value of Katie to the hash `positions`, you would call the hash name, place the key you want to add in square brackets against the hash name and set it equal to the value like this:
-```ruby
-positions[:ruby_instructor] = "Katie"
-```
-Doing this changes the positions hash to:
-
-```ruby
-positions = {:office_manager => "Carley McGee", :coo => "Kristi Riordan ", :placements_manager => "Jackie Morgan", :creative_designer => "Edvin Lee", :ruby_instructor => "Katie"}
-```
+# Intro to Hashes Lab
 
 ## Objectives
-1. Become comfortable reading and using the official documentation of the Ruby Language
-2. Gain proficiency instantiating hashes
-3. Gain understanding of nested hash creation and retrieval
-4. Gain proficiency performing simple manipulations
+
+So far we've covered: 
+
+* What hashes are and why we use them
+* How to build simple hashes
+* How to build nested hashes
+* How to access and change data in a hash
+* How to add data to a hash
+
+This lab will help you to practice all of those new skills. 
 
 ## Instructions
 
-The third test in this lab requires you to build out a multidimentional hash (monopoly).  A multidimentional hash is simply a hash of hashes - a key can point to a value that is an additiona hash, and so on. You can think of it as nesting.
-
-At the end of the exercice your multidimentional monopoly hash should look like this:
+1. Fork and clone this lab and run the test suite to get started. Pay attention to the test suite for this lab. The instructions and comments are designe to help you get the tests to pass. 
+2. The test requires you to createa a method, `#new_hash`, that creates and returns a brand new, empty hash. 
+3. The second test requires you to build a method, `#actor`, that creates and returns a hash with a certain actor's name. *read the spec/test output from running rspec or learn* this is where you will find the necessary information for passing the test!
+4. The next series of tests will require you to build methods that build up a nested hash, one layer/level at a time, very similarly to how we built our `epic_tragedy` hash in the previous lesson. Read the test output very carefully, that will guide you through building the necessary methods. At the end of the exercice your multidimentional monopoly hash should look like this:
 
 ```ruby
 monopoly =  {
@@ -84,8 +54,9 @@ monopoly =  {
 }
 ```
 
-1. Follow the comment instructions in `intro_to_ruby_hashes_lab_spec.rb` and go through each test sequentially.
-2. If you do not understand the instructions, consult an instructor
+**Don't Forget!** 
+
+Remember to use binding.pry to help you get inside your methods and understand what is going on if you need to debug. Remember to google questions that you have if you get stuck and remember to ask questions on Learn!
 
 ## Resources
 1. [What is a Hash in Ruby?](http://ruby.about.com/od/rubyfeatures/a/hashes.htm)
