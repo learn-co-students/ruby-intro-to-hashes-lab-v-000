@@ -3,7 +3,7 @@ require_relative '../intro_to_ruby_hashes_lab.rb'
 
 describe "working with hashes" do
 
-  context "instantiating" do
+  describe "instantiating" do
     describe "#new_hash" do
       it "creates an empty hash and returns it" do
         
@@ -12,7 +12,7 @@ describe "working with hashes" do
     end
   end
 
-  context "instantiating a hash with ONE key-value pair" do
+  describe "instantiating a hash with ONE key-value pair" do
     describe "#actor" do 
       it "creates a hash named actor whose key is a symbol :name and value is a string 'Dwayne The Rock Johnson'" do
         expect(actor[:name]).to eq("Dwayne The Rock Johnson")
@@ -23,7 +23,7 @@ describe "working with hashes" do
 end
 
 describe "building a multidimensional monopoly hash" do 
-  context "adding a key-value pair to the top level of the monopoly hash" do
+  describe "adding a key-value pair to the top level of the monopoly hash" do
     describe "#monopoly" do 
       
       it "add a key value pair to the monopoly hash. The should be :railroads and the value should be an empty hash" do 
@@ -35,7 +35,7 @@ describe "building a multidimensional monopoly hash" do
     end
   end
 
-  context "adding key-value pairs to the second-level of the monopoly hash using the monopoly hash we starting building in the #monopoly method" do
+  describe "adding key-value pairs to the second-level of the monopoly hash using the monopoly hash we starting building in the #monopoly method" do
     describe "#monopoly_with_second_tier" do 
       
       it "sets the first key of railroads hash to a symbol, :pieces, whose value is the integer 4" do
@@ -59,7 +59,7 @@ describe "building a multidimensional monopoly hash" do
     end
   end
 
-  context "adding key/value pairs to the third level of the monopoly hash we continued building in the previous method" do
+  describe "adding key/value pairs to the third level of the monopoly hash we continued building in the previous method" do
     describe "#monopoly_with_third_tier" do 
       
       it "sets the 1st key of :rent_in_dollars hash to a symbol :one_piece_owned whose value is the integer 25" do
@@ -120,7 +120,7 @@ describe "building a multidimensional monopoly hash" do
 
   end
 
-  context "fourth level of monopoly hash" do 
+  describe "fourth level of monopoly hash" do 
     describe "#monopoly_with_fourth_tier" do
         
       it "sets the 1st key of :reading_railroad hash to a string 'mortgage_value' whose value is a string $100" do
