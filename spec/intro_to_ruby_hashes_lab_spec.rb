@@ -26,7 +26,7 @@ describe "building a multidimensional monopoly hash" do
   describe "adding a key-value pair to the top level of the monopoly hash" do
     describe "#monopoly" do 
       
-      it "add a key value pair to the monopoly hash. The should be :railroads and the value should be an empty hash" do 
+      it "add a key value pair to the monopoly hash. The key should be :railroads and the value should be an empty hash" do 
         expect(monopoly[:railroads]).to eq({})
         expect(monopoly.keys.count).to eq(1)
         expect(monopoly.values).to match_array([{}])
@@ -62,7 +62,7 @@ describe "building a multidimensional monopoly hash" do
   describe "adding key/value pairs to the third level of the monopoly hash we continued building in the previous method" do
     describe "#monopoly_with_third_tier" do 
       
-      it "sets the 1st key of :rent_in_dollars hash to a symbol :one_piece_owned whose value is the integer 25" do
+      it "sets the 1st key of the :rent_in_dollars hash to a symbol :one_piece_owned whose value is the integer 25" do
         expect(monopoly_with_third_tier.values[0].values.count).to eq(3)
         expect(monopoly_with_third_tier.values[0][:rent_in_dollars].values[0]).to eq(25)
         expect(monopoly_with_third_tier.values[0][:rent_in_dollars].keys[0]).to eq(:one_piece_owned)
