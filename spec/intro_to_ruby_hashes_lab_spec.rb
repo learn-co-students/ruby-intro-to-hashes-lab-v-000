@@ -154,5 +154,3 @@ describe "building a multidimensional monopoly hash" do
     end
   end
 end
-
-
