@@ -54,6 +54,7 @@ def monopoly_with_fourth_tier
       pieces: 4,
       names: {
         reading_railroad: {
+          #strings are not symbols so we do not add the ':'
           "mortgage_value" => "$100"
         },
         pennsylvania_railroad: {
