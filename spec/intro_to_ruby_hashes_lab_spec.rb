@@ -1,5 +1,6 @@
 require_relative 'spec_helper'
 require_relative '../intro_to_ruby_hashes_lab.rb'
+require "pry"
 
 describe "working with hashes" do
 
@@ -49,6 +50,7 @@ describe "building a multidimensional monopoly hash" do
       end
 
       it "sets the third key of the :railroads hash to a symbol, :rent_in_dollars, whose value is an empty hash " do
+puts monopoly_with_second_tier
 
         expect(monopoly_with_second_tier[:railroads][:rent_in_dollars]).to eq({})
         expect(monopoly_with_second_tier.values[0].keys).to eq([:pieces, :names, :rent_in_dollars])
