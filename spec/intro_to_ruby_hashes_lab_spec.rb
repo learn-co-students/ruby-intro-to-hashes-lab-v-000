@@ -65,7 +65,6 @@ describe "building a multidimensional monopoly hash" do
       end
 
       it "sets the 2nd key of the :rent_in_dollars hash to a symbol, :two_pieces_owned, whose value is the integer 50" do
-
         expect(monopoly_with_third_tier.keys.count).to eq(1)
         expect(monopoly_with_third_tier.values[0].keys.count).to eq(3)
         expect(monopoly_with_third_tier.values[0][:rent_in_dollars][:two_pieces_owned]).to eq(50)
