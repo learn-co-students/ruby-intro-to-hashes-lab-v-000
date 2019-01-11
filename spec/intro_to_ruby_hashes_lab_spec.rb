@@ -1,7 +1,7 @@
 require_relative 'spec_helper'
 require_relative '../intro_to_ruby_hashes_lab.rb'
 
-puts describe "working with hashes" do
+ describe "working with hashes" do
 
   describe "instantiating" do
     describe "#new_hash" do
@@ -12,7 +12,7 @@ puts describe "working with hashes" do
     end
   end
 
-  puts describe "instantiating a hash with ONE key-value pair" do
+   describe "instantiating a hash with ONE key-value pair" do
     describe "#actor" do
       it "creates a hash named actor whose key is a symbol :name and whose value is a string, 'Dwayne The Rock Johnson'" do
         expect(actor[:name]).to eq("Dwayne The Rock Johnson")
@@ -22,7 +22,7 @@ puts describe "working with hashes" do
 
 end
 
-puts describe "building a multidimensional monopoly hash" do
+describe "building a multidimensional monopoly hash" do
   describe "adding a key-value pair to the top level of the monopoly hash" do
     describe "#monopoly" do
       it "adds a key-value pair to the monopoly hash. The key should be :railroads and the value should be an empty hash" do
@@ -33,7 +33,7 @@ puts describe "building a multidimensional monopoly hash" do
     end
   end
 
-  puts describe "adding key-value pairs to the second level of the monopoly hash that we started building in the #monopoly method" do
+ describe "adding key-value pairs to the second level of the monopoly hash that we started building in the #monopoly method" do
     describe "#monopoly_with_second_tier" do
       it "sets the first key of the :railroads hash to a symbol, :pieces, whose value is the integer 4" do
         # the goal of this part of the lab is to have you build the multidimentional monopoly hash in sequential order
