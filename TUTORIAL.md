@@ -6,8 +6,11 @@ In the instructions it tells us that this method should return an empty hash. We
 
 ```ruby
 def new_hash
-  {}
+
+
 end
+
+
 ```
 
 ### `#actor`
@@ -31,7 +34,10 @@ Now, we will create a new `monopoly` hash, with a `:railroads` key and and empty
 ```ruby
 def monopoly
   monopoly = {
-    railroads: {}
+    railroads:=>
+     {
+       :pieces=>4,
+       :rent_in_dollars=>}
   }
 end
 ```
@@ -42,7 +48,7 @@ end
 sets the first key of railroads hash to a symbol, :pieces, whose value is the integer 4 (FAILED - 1)
 ```
 
-To pass this test, we need to add a key `:pieces` to the empty hash which is the value of the `railroads` key, and set its value to `4`. 
+To pass this test, we need to add a key `:pieces` to the empty hash which is the value of the `railroads` key, and set its value to `4`.
 
 ```ruby
 def monopoly_with_second_tier
@@ -53,7 +59,7 @@ def monopoly_with_second_tier
   }
 end
 ```
-One of this method's tests is passing now. The next failure is: 
+One of this method's tests is passing now. The next failure is:
 
 ```bash
 sets the second key of railroads hash to a symbol, :names, whose value is an empty hash (FAILED - 1)
@@ -64,7 +70,7 @@ We need to create a new key in our railroads hash with a value of an empty hash.
 def monopoly_with_second_tier
 	monopoly = {
 		railroads: {
-			pieces: 4, 
+			pieces: 4,
 			names: {}
 		}
 	}
@@ -82,8 +88,8 @@ def monopoly_with_second_tier
   # copy and paste the monopoly hash you built in the previous method. We're going to add stuff to it here!
   monopoly = {
     railroads: {
-      pieces: 4, 
-      names: {}, 
+      pieces: 4,
+      names: {},
       rent_in_dollars: {}
     }
   }
@@ -103,12 +109,12 @@ Because we need to add other key/value pairs to the same hash to pass more tests
 def monopoly_with_third_tier
 	monopoly = {
     railroads: {
-      pieces: 4, 
-      names: {}, 
+      pieces: 4,
+      names: {},
       rent_in_dollars: {
-        :one_piece_owned => 25, 
-        :two_pieces_owned => 50, 
-        :three_pieces_owned => 100, 
+        :one_piece_owned => 25,
+        :two_pieces_owned => 50,
+        :three_pieces_owned => 100,
         :four_pieces_owned => 200
       }
     }
@@ -122,17 +128,17 @@ def monopoly_with_third_tier
   #copy and paste the monopoly hash you built in the previous method. We're going to add stuff to it here!
   monopoly = {
     railroads: {
-      pieces: 4, 
+      pieces: 4,
       names: {
-        :reading_railroad => {}, 
-        :pennsylvania_railroad => {}, 
-        :b_and_o_railroad => {}, 
+        :reading_railroad => {},
+        :pennsylvania_railroad => {},
+        :b_and_o_railroad => {},
         :shortline => {}
-      }, 
+      },
       rent_in_dollars: {
-        :one_piece_owned => 25, 
-        :two_pieces_owned => 50, 
-        :three_pieces_owned => 100, 
+        :one_piece_owned => 25,
+        :two_pieces_owned => 50,
+        :three_pieces_owned => 100,
         :four_pieces_owned => 200
       }
     }
@@ -157,25 +163,25 @@ def monopoly_with_fourth_tier
   #copy and past the monopoly hash you build in the previous method. We're going to add stuff to it here!
   monopoly = {
     railroads: {
-      pieces: 4, 
+      pieces: 4,
       names: {
-	:reading_railroad => { 
+	:reading_railroad => {
 	  "mortgage_value" => "$100"
-	}, 
-	:pennsylvania_railroad => { 
+	},
+	:pennsylvania_railroad => {
 	  "mortgage_value" => "$200"
-	}, 
-	:b_and_o_railroad => { 
+	},
+	:b_and_o_railroad => {
 	  "mortgage_value" => "$400"
-	}, 
-	:shortline => { 
+	},
+	:shortline => {
 	  "mortgage_value" => "$800"
 	}
-      }, 
+      },
       rent_in_dollars: {
-	:one_piece_owned => 25, 
-	:two_pieces_owned => 50, 
-	:three_pieces_owned => 100, 
+	:one_piece_owned => 25,
+	:two_pieces_owned => 50,
+	:three_pieces_owned => 100,
 	:four_pieces_owned => 200
       }
     }
