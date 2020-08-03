@@ -1,6 +1,6 @@
 require_relative 'spec_helper'
 require_relative '../intro_to_ruby_hashes_lab.rb'
-
+require 'pry'
 describe "working with hashes" do
 
   describe "instantiating" do
