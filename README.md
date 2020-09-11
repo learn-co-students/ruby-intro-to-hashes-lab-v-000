@@ -9,7 +9,7 @@
 
 ## Instructions
 
-1. Fork and clone this lab and run the test suite with the `learn` command. Pay
+1. Fork and clone this lab and run the test suite with the `learn test` command. Pay
    attention to the test suite for this lab. The instructions and comments are
    designed to help you get the tests to pass.
 
@@ -18,7 +18,7 @@
 
 3. The second test requires you to build a method called `#actor` that creates
    and returns a hash with a certain actor's name. _Read the test output by
-   entering_ `rspec` _or_ `learn`_—this is where you will find the necessary
+   entering_ `rspec` _or_ `learn test`_—this is where you will find the necessary
    information for passing the test!_
 
 4. The next series of tests will require you to build methods that build up a
@@ -66,7 +66,7 @@ monopoly =  {
 
 Remember to use `binding.pry` to help you get inside your methods and understand
 what is going on if you need to debug. Remember to google questions that you
-have if you get stuck and remember to ask questions on Learn!
+have if you get stuck and remember to ask questions!
 
 ## Resources
 
